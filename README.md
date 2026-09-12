@@ -8,8 +8,8 @@ Based in Mombasa, Kenya.
 
 ## 🔧 What I Build
 
-- **Data pipelines & automation** — Python scripts that automate the routine boring tasks
-- **REST APIs** — FastAPI and Flask services that stay out of your way
+- **Data pipelines & automation** — Python scripts 
+- **REST APIs** — FastAPI and Flask 
 - **ML Models** — models that turn data into actionable insights
 - **Browser-based tools** — JavaScript + Fetch API
 
@@ -20,7 +20,7 @@ Based in Mombasa, Kenya.
 ### [smp-coach](https://github.com/yourusername/smp-coach)
 > Daily performance tracker with ML and AI-powered coaching
 
-Log your day, get feedback that adapts to you. Built to answer one question: *am I actually improving?*
+Log your day, get feedback that adapts to you. Built to answer one question: *Am I improving?*
 
 ### [browser-coach](https://github.com/yourusername/browser-coach)
 > Client-side AI coaching tool in JavaScript
