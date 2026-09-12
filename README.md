@@ -43,9 +43,9 @@ Runs entirely in the browser. No servers, no sign-ups, no data leaving your mach
 
 ## 📫 Reach Me
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:aloismutharimi@gmail.com.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/aloismutharimi)
-[![X](https://img.shields.io/badge/-000000?style=flat&logo=x&logoColor=white)](https://x.com/crypticNATTY)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/#)
+[![X](https://img.shields.io/badge/-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
 <!---
 aloismutharimi/aloismutharimi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
