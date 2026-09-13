@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#142f3d" />
+    <title>Rollcall | Daily attendance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">R</span><span>rollcall</span></div>
+        <div class="sidebar-label">Workspace</div>
+        <nav class="nav-list" aria-label="Primary navigation">
+          <a class="nav-item active" href="#attendance"><span class="nav-icon">▦</span>Attendance</a>
+          <a class="nav-item" href="#learners"><span class="nav-icon">◎</span>Learners</a>
+          <a class="nav-item" href="#reports"><span class="nav-icon">↗</span>Reports</a>
+        </nav>
+        <div class="sidebar-foot">
+          <div class="class-card">
+            <span class="class-dot"></span>
+            <div><strong>Year 8 · Cedar</strong><small>24 learners</small></div>
+            <button class="icon-button" aria-label="Class options">···</button>
+          </div>
+          <div class="user-card"><div class="avatar">MA</div><div><strong>Melkzadeck</strong><small>Class teacher</small></div><span class="chevron">⌄</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="attendance">
+        <header class="topbar">
+          <div class="mobile-brand"><span class="brand-mark">R</span><span>rollcall</span></div>
+          <div class="top-actions"><button class="help-button" aria-label="Help">?</button><button class="avatar small">MA</button></div>
+        </header>
+
+        <section class="page-intro">
+          <div><p class="eyebrow">Tuesday · 14 May 2024</p><h1>Good morning, Mary.</h1><p class="intro-copy">Take attendance as your day unfolds. You can update a learner's status at any time.</p></div>
+          <div class="date-actions"><button class="secondary-button" id="todayButton">Today</button><button class="date-button" id="prevDay" aria-label="Previous day">‹</button><button class="date-button" id="nextDay" aria-label="Next day">›</button></div>
+        </section>
+
+        <section class="overview-grid" aria-label="Attendance overview">
+          <article class="overview-card highlight"><div class="card-heading"><span>Present today</span><span class="card-icon">✓</span></div><strong id="presentCount">0</strong><div class="progress-track"><span id="presentProgress"></span></div><small><b id="presentPercent">0%</b> of learners marked present</small></article>
+          <article class="overview-card"><div class="card-heading"><span>Lessons complete</span><span class="card-icon muted">◷</span></div><strong id="lessonsComplete">0 <small>/ 4</small></strong><small class="card-note">Keep the register moving</small></article>
+          <article class="overview-card"><div class="card-heading"><span>Needs attention</span><span class="card-icon warm">!</span></div><strong id="attentionCount">0</strong><small class="card-note">Absences and late arrivals</small></article>
+        </section>
+
+        <section class="register-section" id="learners">
+          <div class="section-heading"><div><h2>Daily register</h2><p>Click a status to cycle through present, late, and absent.</p></div><div class="section-actions"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Find a learner" /></label><button class="secondary-button" id="exportButton">↥ Export</button><button class="primary-button" id="markAllButton">✓ Mark all present</button></div></div>
+          <div class="table-wrap"><table><thead><tr><th class="learner-column">Learner <span class="sort">↕</span></th><th><span class="lesson-number">01</span>Lesson one<small>08:00 – 08:45</small></th><th><span class="lesson-number">02</span>Lesson two<small>09:00 – 09:45</small></th><th><span class="lesson-number">03</span>Lesson three<small>10:15 – 11:00</small></th><th><span class="lesson-number">04</span>Lesson four<small>11:15 – 12:00</small></th></tr></thead><tbody id="registerBody"></tbody></table></div>
+          <div class="table-footer"><span id="shownCount">Showing 0 learners</span><div class="legend"><span><i class="status-dot present-dot"></i>Present</span><span><i class="status-dot late-dot"></i>Late</span><span><i class="status-dot absent-dot"></i>Absent</span><span><i class="status-dot empty-dot"></i>Not marked</span></div></div>
+        </section>
+        <footer class="page-footer"><span>Last saved just now</span><span><kbd>⌘</kbd> + <kbd>S</kbd> to save changes</span></footer>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
