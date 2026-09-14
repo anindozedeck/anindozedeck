@@ -8,7 +8,7 @@ Based in Mombasa, Kenya.
 
 ## 🔧 What I Build
 
-- **Data pipelines & automation** — Python scripts 
+- **Data pipelines & automation** — Python scripts for automation
 - **REST APIs** — FastAPI and Flask 
 - **ML Models** — models that turn data into actionable insights to solve human problem
 - **Browser-based tools** — JavaScript + Fetch API
