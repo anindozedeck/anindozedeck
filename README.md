@@ -10,7 +10,7 @@ Based in Mombasa, Kenya.
 
 - **Data pipelines & automation** — Python scripts 
 - **REST APIs** — FastAPI and Flask 
-- **ML Models** — models that turn data into actionable insights
+- **ML Models** — models that turn data into actionable insights to solve human problem
 - **Browser-based tools** — JavaScript + Fetch API
 
 ---
