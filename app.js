@@ -1,56 +1,55 @@
-const learners = [
-  ['Amina Wanjiku', 'YW-0841'], ['Brian Otieno', 'YW-0842'], ['Chloe Njeri', 'YW-0843'], ['Daniel Kiptoo', 'YW-0844'],
-  ['Elijah Mwangi', 'YW-0845'], ['Fatima Hassan', 'YW-0846'], ['Grace Akinyi', 'YW-0847'], ['Hassan Ali', 'YW-0848'],
-  ['Ivy Chebet', 'YW-0849'], ['Jonah Maina', 'YW-0850'], ['Liam Kamau', 'YW-0851'], ['Maya Wambui', 'YW-0852']
-];
-const statuses = ['present', 'late', 'absent', 'empty'];
-const labels = { present: 'Present', late: 'Late', absent: 'Absent', empty: 'Not marked' };
-let attendance = JSON.parse(localStorage.getItem('rollcall-attendance') || 'null') || learners.map(() => ['present', 'present', 'empty', 'empty']);
+const defaultProfile = {
+  name: 'Melkzadeck Anindo',
+  education: '',
+  location: 'Mombasa, Kenya',
+  bio: 'I enjoy the space where software, data, and everyday human behavior meet. My work is guided by a simple question: can this be made clearer, faster, or more useful?'
+};
 
-function initials(name) { return name.split(' ').map(part => part[0]).join(''); }
-function save() { localStorage.setItem('rollcall-attendance', JSON.stringify(attendance)); updateSummary(); }
-function nextStatus(current) { return statuses[(statuses.indexOf(current) + 1) % statuses.length]; }
-function render() {
-  const query = document.querySelector('#searchInput').value.toLowerCase().trim();
-  const body = document.querySelector('#registerBody');
-  body.innerHTML = '';
-  learners.forEach((learner, learnerIndex) => {
-    if (query && !learner[0].toLowerCase().includes(query) && !learner[1].toLowerCase().includes(query)) return;
-    const row = document.createElement('tr');
-    row.innerHTML = `<td><div class="learner"><span class="learner-avatar">${initials(learner[0])}</span><span><span class="learner-name">${learner[0]}</span><span class="learner-id">${learner[1]}</span></span></div></td>`;
-    attendance[learnerIndex].forEach((status, lessonIndex) => {
-      const cell = document.createElement('td');
-      const button = document.createElement('button');
-      button.className = `status-button status-${status}`;
-      button.innerHTML = `<i class="status-dot ${status}-dot"></i>${labels[status]}`;
-      button.setAttribute('aria-label', `${learner[0]}, lesson ${lessonIndex + 1}: ${labels[status]}. Click to change.`);
-      button.addEventListener('click', () => { attendance[learnerIndex][lessonIndex] = nextStatus(status); save(); render(); });
-      cell.append(button); row.append(cell);
-    });
-    body.append(row);
+const profile = { ...defaultProfile, ...(JSON.parse(localStorage.getItem('melkzadeck-profile') || 'null') || {}) };
+const dialog = document.querySelector('#profileDialog');
+const form = document.querySelector('#profileForm');
+
+function updateProfileView() {
+  document.querySelector('#displayName').textContent = profile.name;
+  document.querySelector('#educationValue').textContent = profile.education || 'Tell me your education level →';
+  document.querySelector('#educationSignal').textContent = profile.education || 'Add your education';
+  document.querySelector('#locationValue').textContent = profile.location;
+  document.querySelector('#bioValue').textContent = profile.bio;
+}
+
+function fillForm() {
+  Object.entries(profile).forEach(([key, value]) => {
+    const field = form.elements.namedItem(key);
+    if (field) field.value = value;
   });
-  document.querySelector('#shownCount').textContent = `Showing ${body.children.length} of ${learners.length} learners`;
-  updateSummary();
 }
-function updateSummary() {
-  const marked = attendance.flat().filter(status => status !== 'empty');
-  const present = attendance.flat().filter(status => status === 'present').length;
-  const attention = attendance.flat().filter(status => status === 'late' || status === 'absent').length;
-  const complete = [0, 1, 2, 3].filter(lesson => attendance.every(learner => learner[lesson] !== 'empty')).length;
-  document.querySelector('#presentCount').textContent = present;
-  document.querySelector('#presentPercent').textContent = `${marked.length ? Math.round((present / marked.length) * 100) : 0}%`;
-  document.querySelector('#presentProgress').style.width = `${marked.length ? (present / marked.length) * 100 : 0}%`;
-  document.querySelector('#lessonsComplete').innerHTML = `${complete} <small>/ 4</small>`;
-  document.querySelector('#attentionCount').textContent = attention;
-}
-document.querySelector('#searchInput').addEventListener('input', render);
-document.querySelector('#markAllButton').addEventListener('click', () => { attendance = attendance.map(learner => learner.map(() => 'present')); save(); render(); });
-document.querySelector('#todayButton').addEventListener('click', () => { document.querySelector('.eyebrow').textContent = 'Tuesday · 14 May 2024'; });
-document.querySelector('#prevDay').addEventListener('click', () => { document.querySelector('.eyebrow').textContent = 'Monday · 13 May 2024'; });
-document.querySelector('#nextDay').addEventListener('click', () => { document.querySelector('.eyebrow').textContent = 'Wednesday · 15 May 2024'; });
-document.querySelector('#exportButton').addEventListener('click', () => {
-  const csv = [['Learner', 'ID', 'Lesson 1', 'Lesson 2', 'Lesson 3', 'Lesson 4'], ...learners.map((learner, index) => [learner[0], learner[1], ...attendance[index].map(status => labels[status])])].map(row => row.join(',')).join('\n');
-  const link = document.createElement('a'); link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); link.download = 'rollcall-attendance.csv'; link.click(); URL.revokeObjectURL(link.href);
+
+document.querySelector('#year').textContent = new Date().getFullYear();
+updateProfileView();
+document.querySelector('#editProfile').addEventListener('click', () => { fillForm(); dialog.showModal(); });
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const values = Object.fromEntries(new FormData(form).entries());
+  Object.assign(profile, values);
+  localStorage.setItem('melkzadeck-profile', JSON.stringify(profile));
+  updateProfileView();
+  dialog.close();
 });
-document.addEventListener('keydown', event => { if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 's') { event.preventDefault(); save(); } });
-render();
+dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+
+document.querySelectorAll('.nav-item').forEach(item => item.addEventListener('click', () => {
+  document.querySelectorAll('.nav-item').forEach(navItem => navItem.classList.remove('active'));
+  item.classList.add('active');
+}));
+
+const sections = [...document.querySelectorAll('main section[id]')];
+const navItems = [...document.querySelectorAll('.nav-item')];
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+  if (!entry.isIntersecting) return;
+  const matching = navItems.find(item => item.getAttribute('href') === `#${entry.target.id}`);
+  if (matching) {
+    navItems.forEach(item => item.classList.remove('active'));
+    matching.classList.add('active');
+  }
+}), { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(section => observer.observe(section));

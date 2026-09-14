@@ -17,22 +17,22 @@ Based in Mombasa, Kenya.
 
 ## 🚀 Current Projects
 
-### [smp-tracker](https://github.com/yourusername/smp-tracker)
+### [smp-tracker](https://github.com/anindozedeck/smp-tracker)
 > ML classifier and coaching layer for daily goal achievement
 
 Predicts daily goal achievement from biometric inputs using Python, scikit-learn, and pandas.
 
-### [browser-coach](https://github.com/yourusername/browser-coach)
+### [browser-coach](https://github.com/anindozedeck/browser-coach)
 > Client-side prediction and coaching tool
 
 The prediction engine and coaching generator run entirely in the browser with JavaScript, the DOM, and the Fetch API.
 
-### [api-dashboard](https://github.com/yourusername/api-dashboard)
+### [api-dashboard](https://github.com/anindozedeck/api-dashboard)
 > Multi-endpoint dashboard for live data and protocol reporting
 
 Pulls live data from multiple endpoints, groups results by protocol, and exports JSON reports with Python, FastAPI, and pandas.
 
-### [data-analysis-report](https://github.com/yourusername/data-analysis-report)
+### [data-analysis-report](https://github.com/anindozedeck/data-analysis-report)
 > 28-day SMP fitness log analysis
 
 Uses pandas and NumPy to create weekly breakdowns and compare performance across protocols.
