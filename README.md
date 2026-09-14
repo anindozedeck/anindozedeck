@@ -30,7 +30,7 @@ The prediction engine and coaching generator run entirely in the browser with Ja
 ### [api-dashboard](https://github.com/anindozedeck/api-dashboard)
 > Multi-endpoint dashboard for live data and protocol reporting
 
-Pulls live data from multiple endpoints, groups results by protocol, and exports JSON reports with Python, FastAPI, and pandas.
+Pulls live data from multiple endpoints, groups results by protocol, and exports JSON reports with Python, FastAPI, and pandas
 
 ### [data-analysis-report](https://github.com/anindozedeck/data-analysis-report)
 > 28-day SMP fitness log analysis
