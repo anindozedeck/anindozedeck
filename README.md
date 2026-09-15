@@ -63,9 +63,8 @@ Explores performance trends and protocol results through weekly breakdowns using
 
 ## 📫 Connect With Me
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anindozedeck)
-[![X](https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
-
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com.)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/#)
+[![X](https://img.shields.io/badge/-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
 
 
