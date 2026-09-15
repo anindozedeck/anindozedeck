@@ -55,7 +55,7 @@ Uses pandas and NumPy to create weekly breakdowns and compare performance across
 ## 📫 Reach Me
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com.)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/melkzadeckanindo)
 [![X](https://img.shields.io/badge/-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
 
 
