@@ -1,45 +1,54 @@
-# Melkzadeck Anindo | Python Developer | Automation & AI Tools
+# Melkzadeck Anindo
 
-**Building practical tools that solve actual problems.**
+### Python Developer | Automation & AI Tools
+
+Building practical solutions that turn data into action.
 
 Based in Mombasa, Kenya.
 
 ---
 
-## 🔧 What I Build
+## About Me
 
-- **Data pipelines & automation** — Python scripts for automation
-- **REST APIs** — FastAPI and Flask 
-- **ML Models** — models that turn data into actionable insights to solve human problem
-- **Browser-based tools** — JavaScript + Fetch API
+I’m a Python developer focused on building automation, machine learning systems, and data-driven tools that solve real-world problems. I enjoy creating efficient workflows, APIs, dashboards, and intelligent solutions that help people make better decisions faster.
 
 ---
 
-## 🚀 Current Projects
+## 🔧 What I Build
+
+- Data pipelines and workflow automation
+- REST APIs with FastAPI and Flask
+- Machine learning models for decision support
+- Browser-based tools and interactive dashboards
+- Data analysis and reporting systems
+
+---
+
+## 🚀 Featured Projects
 
 ### [smp-tracker](https://github.com/anindozedeck/smp-tracker)
-> ML classifier and coaching layer for daily goal achievement
+> Daily goal achievement prediction and coaching system
 
-Predicts daily goal achievement from biometric inputs using Python, scikit-learn, and pandas.
+Uses Python, scikit-learn, and pandas to predict goal performance from biometric inputs and provide actionable coaching insights.
 
 ### [browser-coach](https://github.com/anindozedeck/browser-coach)
 > Client-side prediction and coaching tool
 
-The prediction engine and coaching generator run entirely in the browser with JavaScript, the DOM, and the Fetch API.
+Runs prediction logic and coaching generation directly in the browser using JavaScript, the DOM, and Fetch API.
 
 ### [api-dashboard](https://github.com/anindozedeck/api-dashboard)
-> Multi-endpoint dashboard for live data and protocol reporting
+> Live multi-endpoint dashboard and reporting app
 
-Pulls live data from multiple endpoints, groups results by protocol, and exports JSON reports with Python, FastAPI, and pandas
+Aggregates real-time data from multiple sources and exports JSON reports with Python, FastAPI, and pandas.
 
 ### [data-analysis-report](https://github.com/anindozedeck/data-analysis-report)
 > 28-day SMP fitness log analysis
 
-Uses pandas and NumPy to create weekly breakdowns and compare performance across protocols.
+Explores performance trends and protocol results through weekly breakdowns using pandas and NumPy.
 
 ---
 
-## 🧰 Stack
+## 🧰 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
@@ -52,10 +61,11 @@ Uses pandas and NumPy to create weekly breakdowns and compare performance across
 
 ---
 
-## 📫 Reach Me
+## 📫 Connect With Me
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com.)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/#)
-[![X](https://img.shields.io/badge/-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:zedeckanindo@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anindozedeck)
+[![X](https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white)](https://x.com/#)
+
 
 
