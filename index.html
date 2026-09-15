@@ -4,49 +4,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#102a43" />
-    <meta name="description" content="Melkzadeck Anindo's portfolio: Python development, automation, APIs, data and AI tools." />
+    <meta
+      name="description"
+      content="Melkzadeck Anindo's portfolio: Python development, automation, APIs, data and AI tools."
+    />
     <title>Melkzadeck Anindo | Python Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="site-shell">
       <aside class="sidebar">
-        <a class="brand" href="#top"><span class="brand-mark">M</span><span>melkzadeck<span class="brand-dot">.</span></span></a>
+        <a class="brand" href="#top"
+          ><span class="brand-mark">M</span
+          ><span>melkzadeck<span class="brand-dot">.</span></span></a
+        >
         <div class="sidebar-label">Portfolio / 2026</div>
         <nav class="nav-list" aria-label="Primary navigation">
-          <a class="nav-item active" href="#top"><span class="nav-icon">01</span>Overview</a>
-          <a class="nav-item" href="#work"><span class="nav-icon">02</span>Selected work</a>
-          <a class="nav-item" href="#about"><span class="nav-icon">03</span>About me</a>
-          <a class="nav-item" href="#contact"><span class="nav-icon">04</span>Contact</a>
+          <a class="nav-item active" href="#top"
+            ><span class="nav-icon">01</span>Overview</a
+          >
+          <a class="nav-item" href="#work"
+            ><span class="nav-icon">02</span>Selected work</a
+          >
+          <a class="nav-item" href="#about"
+            ><span class="nav-icon">03</span>About me</a
+          >
+          <a class="nav-item" href="#contact"
+            ><span class="nav-icon">04</span>Contact</a
+          >
         </nav>
-        <div class="sidebar-foot"><span class="status-dot"></span><span>Open to meaningful work</span></div>
+        <div class="sidebar-foot">
+          <span class="status-dot"></span><span>Open to meaningful work</span>
+        </div>
       </aside>
 
       <main class="main-content" id="top">
-        <header class="topbar"><div class="mobile-brand"><span class="brand-mark">M</span><span>melkzadeck<span class="brand-dot">.</span></span></div><div class="top-actions"><span class="availability"><i></i> Available for projects</span></div></header>
+        <header class="topbar">
+          <div class="mobile-brand">
+            <span class="brand-mark">M</span
+            ><span>melkzadeck<span class="brand-dot">.</span></span>
+          </div>
+          <div class="top-actions">
+            <span class="availability"><i></i> Available for projects</span
+            ><button class="outline-button" id="editProfile">
+              Edit profile
+            </button>
+          </div>
+        </header>
 
         <section class="hero-section">
-          <div class="hero-copy"><p class="eyebrow">Python developer · Automation · AI tools</p><h1>I build useful software for <em>real problems.</em></h1><p class="hero-intro">I’m <strong id="displayName">Melkzadeck Anindo</strong>, a developer based in Mombasa, Kenya. I turn messy data and repeated tasks into practical tools that people can actually use.</p><div class="hero-actions"><a class="primary-button" href="#work">See my work <span>↗</span></a><a class="text-button" href="#contact">Let’s talk <span>↗</span></a></div></div>
-          <div class="hero-stamp"><span>Currently</span><strong>Making data<br />do more.</strong><small>Scroll to explore ↓</small></div>
+          <div class="hero-copy">
+            <p class="eyebrow">Python developer · Automation · AI tools</p>
+            <h1>I build useful software for <em>real problems.</em></h1>
+            <p class="hero-intro">
+              I’m <strong id="displayName">Melkzadeck Anindo</strong>, a
+              developer based in Mombasa, Kenya. I turn messy data and repeated
+              tasks into practical tools that people can actually use.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#work"
+                >See my work <span>↗</span></a
+              ><a class="text-button" href="#contact"
+                >Let’s talk <span>↗</span></a
+              >
+            </div>
+          </div>
+          <div class="hero-stamp">
+            <span>Currently</span><strong>Making data<br />do more.</strong
+            ><small>Scroll to explore ↓</small>
+          </div>
         </section>
 
-        <section class="signal-strip" aria-label="Profile highlights"><div><span class="signal-number">01</span><strong>Python-first</strong><small>APIs, data & automation</small></div><div><span class="signal-number">02</span><strong>Human-minded</strong><small>Clear tools, useful outcomes</small></div><div><span class="signal-number">03</span><strong>Always learning</strong><small id="educationSignal">Add your education</small></div></section>
+        <section class="signal-strip" aria-label="Profile highlights">
+          <div>
+            <span class="signal-number">01</span><strong>Python-first</strong
+            ><small>APIs, data & automation</small>
+          </div>
+          <div>
+            <span class="signal-number">02</span><strong>Human-minded</strong
+            ><small>Clear tools, useful outcomes</small>
+          </div>
+          <div>
+            <span class="signal-number">03</span><strong>Always learning</strong
+            ><small id="educationSignal">Add your education</small>
+          </div>
+        </section>
 
-        <section class="content-section" id="work"><div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Things I’ve been building.</h2></div><p class="section-note">A small set of experiments and tools with a bias toward action.</p></div><div class="project-grid"><article class="project-card project-featured"><div class="project-top"><span class="project-index">01 / ML</span><span class="project-arrow">↗</span></div><h3>SMP Tracker</h3><p>Predicts daily goal achievement from biometric inputs, then turns the result into practical coaching.</p><div class="tags"><span>Python</span><span>scikit-learn</span><span>pandas</span></div></article><article class="project-card project-blue"><div class="project-top"><span class="project-index">02 / Browser</span><span class="project-arrow">↗</span></div><h3>Browser Coach</h3><p>A client-side prediction and coaching tool that keeps the engine in the browser.</p><div class="tags"><span>JavaScript</span><span>DOM</span><span>Fetch API</span></div></article><article class="project-card project-light"><div class="project-top"><span class="project-index">03 / API</span><span class="project-arrow">↗</span></div><h3>API Dashboard</h3><p>A multi-endpoint dashboard for live data, protocol reporting, and JSON exports.</p><div class="tags"><span>FastAPI</span><span>pandas</span><span>REST</span></div></article></div></section>
+        <section class="content-section" id="work">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2>Things I’ve been building.</h2>
+            </div>
+            <p class="section-note">
+              A small set of experiments and tools with a bias toward action.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <div class="project-top">
+                <span class="project-index">01 / ML</span
+                ><span class="project-arrow">↗</span>
+              </div>
+              <h3>SMP Tracker</h3>
+              <p>
+                Predicts daily goal achievement from biometric inputs, then
+                turns the result into practical coaching.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>scikit-learn</span><span>pandas</span>
+              </div>
+            </article>
+            <article class="project-card project-blue">
+              <div class="project-top">
+                <span class="project-index">02 / Browser</span
+                ><span class="project-arrow">↗</span>
+              </div>
+              <h3>Browser Coach</h3>
+              <p>
+                A client-side prediction and coaching tool that keeps the engine
+                in the browser.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>DOM</span><span>Fetch API</span>
+              </div>
+            </article>
+            <article class="project-card project-light">
+              <div class="project-top">
+                <span class="project-index">03 / API</span
+                ><span class="project-arrow">↗</span>
+              </div>
+              <h3>API Dashboard</h3>
+              <p>
+                A multi-endpoint dashboard for live data, protocol reporting,
+                and JSON exports.
+              </p>
+              <div class="tags">
+                <span>FastAPI</span><span>pandas</span><span>REST</span>
+              </div>
+            </article>
+          </div>
+        </section>
 
-        <section class="about-section" id="about"><div class="about-intro"><p class="eyebrow">A little context</p><h2>Curious by default.<br /><em>Practical by choice.</em></h2></div><div class="about-details"><p id="bioValue">I enjoy the space where software, data, and everyday human behavior meet. My work is guided by a simple question: can this be made clearer, faster, or more useful?</p><div class="detail-list"><div><span>Education</span><strong id="educationValue">Tell me your education level →</strong></div><div><span>Based in</span><strong id="locationValue">Mombasa, Kenya</strong></div><div><span>Focus</span><strong>Automation · APIs · ML</strong></div></div></div></section>
+        <section class="about-section" id="about">
+          <div class="about-intro">
+            <p class="eyebrow">A little context</p>
+            <h2>Curious by default.<br /><em>Practical by choice.</em></h2>
+          </div>
+          <div class="about-details">
+            <p id="bioValue">
+              I enjoy the space where software, data, and everyday human
+              behavior meet. My work is guided by a simple question: can this be
+              made clearer, faster, or more useful?
+            </p>
+            <div class="detail-list">
+              <div>
+                <span>Education</span
+                ><strong id="educationValue"
+                  >Tell me your education level →</strong
+                >
+              </div>
+              <div>
+                <span>Based in</span
+                ><strong id="locationValue">Mombasa, Kenya</strong>
+              </div>
+              <div>
+                <span>Focus</span><strong>Automation · APIs · ML</strong>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <section class="toolkit-section"><div class="section-heading"><div><p class="eyebrow">Toolkit</p><h2>What I work with.</h2></div></div><div class="toolkit-list"><span>Python</span><span>FastAPI</span><span>Flask</span><span>pandas</span><span>NumPy</span><span>scikit-learn</span><span>JavaScript</span><span>Git</span><span>Supabase</span></div></section>
+        <section class="toolkit-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Toolkit</p>
+              <h2>What I work with.</h2>
+            </div>
+          </div>
+          <div class="toolkit-list">
+            <span>Python</span><span>FastAPI</span><span>Flask</span
+            ><span>pandas</span><span>NumPy</span><span>scikit-learn</span
+            ><span>JavaScript</span><span>Git</span><span>Supabase</span>
+          </div>
+        </section>
 
-        <section class="contact-section" id="contact"><div><p class="eyebrow">Have a problem worth solving?</p><h2>Let’s make something<br /><em>useful together.</em></h2></div><div class="contact-actions"><a class="primary-button" href="mailto:zedeckanindo@gmail.com">Email me <span>↗</span></a><a class="social-link" href="https://github.com/anindozedeck" target="_blank" rel="noreferrer">GitHub ↗</a><a class="social-link" href="https://linkedin.com/in/#" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>
-        <footer class="page-footer"><span>© <span id="year"></span> Melkzadeck Anindo</span><span>Built with curiosity and clean code.</span></footer>
+        <section class="contact-section" id="contact">
+          <div>
+            <p class="eyebrow">Have a problem worth solving?</p>
+            <h2>Let’s make something<br /><em>useful together.</em></h2>
+          </div>
+          <div class="contact-actions">
+            <a class="primary-button" href="mailto:zedeckanindo@gmail.com"
+              >Email me <span>↗</span></a
+            ><a
+              class="social-link"
+              href="https://github.com/anindozedeck"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub ↗</a
+            ><a
+              class="social-link"
+              href="https://www.linkedin.com/in/melkzadeck-anindo-91537a434"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn ↗</a
+            >
+          </div>
+        </section>
+        <footer class="page-footer">
+          <span>© <span id="year"></span> Melkzadeck Anindo</span
+          ><span>Built with curiosity and clean code.</span>
+        </footer>
       </main>
     </div>
 
-    <dialog class="profile-dialog" id="profileDialog"><form method="dialog" id="profileForm"><div class="dialog-heading"><div><p class="eyebrow">Make it yours</p><h2>Complete your profile.</h2><p>Add the details that turn this template into your story.</p></div><button class="close-button" value="cancel" aria-label="Close">×</button></div><label>Your name<input name="name" placeholder="e.g. Melkzadeck Anindo" /></label><label>Education level<input name="education" placeholder="e.g. BSc. Computer Science, University of ..." /></label><label>Location<input name="location" placeholder="e.g. Mombasa, Kenya" /></label><label>Short bio<textarea name="bio" rows="3" placeholder="What do you care about building?"></textarea></label><div class="dialog-actions"><button class="text-button" value="cancel">Cancel</button><button class="primary-button" value="default">Save profile <span>↗</span></button></div></form></dialog>
+    <dialog class="profile-dialog" id="profileDialog">
+      <form method="dialog" id="profileForm">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">Make it yours</p>
+            <h2>Complete your profile.</h2>
+            <p>Add the details that turn this template into your story.</p>
+          </div>
+          <button class="close-button" value="cancel" aria-label="Close">
+            ×
+          </button>
+        </div>
+        <label
+          >Your name<input
+            name="name"
+            placeholder="e.g. Melkzadeck Anindo" /></label
+        ><label
+          >Education level<input
+            name="education"
+            placeholder="e.g. BSc. Computer Science, University of ..." /></label
+        ><label
+          >Location<input
+            name="location"
+            placeholder="e.g. Mombasa, Kenya" /></label
+        ><label
+          >Short bio<textarea
+            name="bio"
+            rows="3"
+            placeholder="What do you care about building?"
+          ></textarea>
+        </label>
+        <div class="dialog-actions">
+          <button class="text-button" value="cancel">Cancel</button
+          ><button class="primary-button" value="default">
+            Save profile <span>↗</span>
+          </button>
+        </div>
+      </form>
+    </dialog>
     <script src="app.js"></script>
   </body>
 </html>
